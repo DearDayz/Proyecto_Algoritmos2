@@ -1,5 +1,6 @@
 from datetime import datetime
 from tareas_prio import Subtarea, Tarea
+from pilas_y_colas import Pila, Cola, Nodo, ListaEnlazada
 
 def verifica_formato_fecha(fecha_str):
     try:
@@ -20,9 +21,43 @@ class Proyecto:
         self.gerente = gerente
         self.equipo = equipo
         self.tareas = []
+        self.pila_prioritarias = Pila()
+        self.cola_proximas = Cola()
+        
     
     def agregar_tarea(self, tarea):
         self.tareas.append(tarea)
+
+    def insertar_tarea(self, indice, tarea):
+        self.tareas.insert(indice, tarea)
+
+    def eliminar_tarea(self, tarea):
+        self.tareas.remove(tarea)
+
+    def agregar_tarea_prioritaria(self, tarea):
+        self.tareas_prioritarias.agregar(tarea)
+    
+    def agregar_tarea_proxima(self, tarea):
+        self.tareas_proximas.agregar(tarea)
+    
+    def eliminar_tarea_prioritaria(self):
+        return self.tareas_prioritarias.eliminar()
+    
+    def eliminar_tarea_proxima(self):
+        return self.tareas_proximas.eliminar()
+    
+    def consultar_tarea_prioritaria(self):
+        return self.tareas_prioritarias.ver_tope()
+    
+    def consultar_tarea_proxima(self):
+        return self.tareas_proximas.ver_frente()
+    
+    def mostrar_tiempo_total_tareas_prioritarias(self):
+        self.tareas_prioritarias.mostrar_tiempo_total()
+    
+    def mostrar_tiempo_total_tareas_proximas(self):
+        self.tareas_proximas.mostrar_tiempo_total()
+    
 
 def es_entero(cadena):
     try:
@@ -369,8 +404,19 @@ def opcion_1(lista):
         if resp2 == "1":
             lista.append(proyec)
             print("\nProyecto listado correctamente")
+           
         else:
             print("\nProyecto no listado") 
-        opcion_1(lista)
+            opcion_1(lista)
     else:
-        print("Fin del programa")    
+        print("Fin del programa")   
+
+
+
+
+
+        
+        
+        
+
+    

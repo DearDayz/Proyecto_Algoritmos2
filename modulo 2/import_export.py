@@ -1,11 +1,11 @@
 import json
 from datetime import datetime
 from tareas_prio import Tarea, Subtarea
-from m_proyectos import Proyecto  , opcion_1
+from m_proyectos import Proyecto  ,opcion_1, opcion_2
 
 #Agrego las rutas a un archivo .txt
-ruta_datos = r'C:\Universidad\Semestre 5\Algortimos 2\4ta evauluacion\proyecto3_alg2\datos.json'
-ruta_subtareas = r'C:\Universidad\Semestre 5\Algortimos 2\4ta evauluacion\proyecto3_alg2subtareas_modificadas.json'
+ruta_datos = r'C:\Users\dearp\Desktop\proyecto pilas\Proyecto_Algoritmos2\modulo 2\datos.json'
+ruta_subtareas = r'C:\Users\dearp\Desktop\proyecto pilas\Proyecto_Algoritmos2\modulo 2\subtareas_modificadas.json'
 rutas = open('config.txt','w')
 rutas.write(ruta_datos + "\n")
 rutas.write(ruta_subtareas + "\n")
@@ -68,11 +68,13 @@ def cargar_datos_desde_json(nombre_archivo):
     return proyectos
 
 def menu_principal(info):
-    print("Indique que desea:\n(1)Gestionar Proyectos\n(2)Visualizar repotes")
-    opcion = input("Opciones (1/2): ")
+    print("Indique que desea:\n(1)Gestionar Proyectos\n(2)nGestionar Tareas\n(2)Visualizar repotes")
+    opcion = input("Opciones (1/3): ")
     if opcion == "1":
         opcion_1(info)
     elif opcion == "2":
+        opcion_2(info)
+    elif opcion == "3":
         pass
     else:
         print("Ingrese una opcion correcta")
