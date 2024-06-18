@@ -6,7 +6,7 @@
         "descripcion": "Descripcion del proyecto 1",
         "fecha_inicio": "2024-06-01",
         "fecha_vencimiento": "2024-06-30",
-        "estado": "En progreso",
+        "estado": "Completada",
         "empresa": "Empresa A",
         "gerente": "Gerente A",
         "equipo": ["Equipo A"],
@@ -18,7 +18,7 @@
             "descripcion": "Descripción de la tarea 1",
             "fecha_inicio": "2024-06-01",
             "fecha_vencimiento": "2024-06-30",
-            "estado": "Pendiente",
+            "estado": "Completada",
             "porcentaje": 50,
             "subtareas": [
               {
@@ -42,7 +42,7 @@
             "descripcion": "Descripción de la tarea 2",
             "fecha_inicio": "2024-06-02",
             "fecha_vencimiento": "2024-06-10",
-            "estado": "En progreso",
+            "estado": "Completada",
             "porcentaje": 30,
             "subtareas": [
               {

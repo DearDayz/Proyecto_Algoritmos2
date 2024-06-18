@@ -71,14 +71,17 @@ def cargar_datos_desde_json(nombre_archivo):
     return proyectos
 
 def menu_principal(info):
-    print("Indique que desea:\n(1)Gestionar Proyectos\n(2)Visualizar reportes")
-    opcion = input("Opciones (1/2): ")
+    print("\nIndique que desea:\n(1) Gestionar Proyectos\n(2) Visualizar reportes\n(3) Salir del programa")
+    opcion = input("Opciones (1/2/3): ")
+    while opcion!="1" and opcion!="2" and opcion!="3":
+        opcion = input("Ingrese correctamente su opcion: ")
+    print("\n")
     if opcion == "1":
         print("Esta en proceso")
     elif opcion == "2":
         menu_reportes(info)
-    else:
-        print("Ingrese una opcion correcta")
+    elif opcion =="3":
+        print("Usted ha salido del programa")
 
 info = cargar_datos_desde_json(ruta_datos)
 menu_principal(info)
