@@ -419,4 +419,3 @@ def opcion_1(lista):
         
         
 
-print(verifica_nombre("Empresa A"))

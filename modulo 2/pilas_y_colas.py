@@ -132,11 +132,14 @@ class Pila:
             print(nodo.valor.nombre)
             self._recorrer_aux(nodo.siguiente)
 
-    def mostrar_tiempo_total(self,nodo):
-        suma =0
-        if nodo is not None:
-            suma += nodo.valor.tiempo
-            self.mostrar_tiempo_total(nodo.siguiente)
+    def mostrar_tiempo_total(self):
+        suma = 0
+        nodo = self.tope
+        while nodo is not None:
+            if isinstance(nodo.valor, dict) and 'tiempo' in nodo.valor:
+                suma += nodo.valor['tiempo']
+            nodo = nodo.siguiente
+        print(f"la suma de minutos de las tareas es: {suma}")
 
 class Cola:
     def __init__(self):
@@ -180,3 +183,12 @@ class Cola:
         if nodo is not None:
             print(nodo.valor.nombre)
             self._recorrer_aux(nodo.siguiente)
+
+    def mostrar_tiempo_total(self):
+        suma = 0
+        nodo = self.frente  # Empezamos desde el frente de la cola
+        while nodo is not None:
+            if isinstance(nodo.valor, dict) and 'tiempo' in nodo.valor:
+                suma += nodo.valor['tiempo']
+            nodo = nodo.siguiente
+        print(f"La suma de minutos de las tareas es: {suma}")

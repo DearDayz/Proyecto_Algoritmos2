@@ -3,12 +3,7 @@ from tareas_prio import Subtarea, Tarea
 from pilas_y_colas import Pila, Cola, Nodo, ListaEnlazada
 from m_proyectos import Proyecto, es_entero,verifica_nombre,verifica_formato_fecha
 
-
-
-
 # Inicializamos las estructuras de datos
-
-
 def gestionar_tareas_prioritarias(proyecto):
     print("\nGestión de Tareas Prioritarias")
     print("1. Agregar nueva tarea prioritaria")
@@ -26,7 +21,7 @@ def gestionar_tareas_prioritarias(proyecto):
         tarea = {
             'nombre': nombre,
             'prioridad': prioridad,
-            'tiempo': f"{tiempo} min"
+            'tiempo': tiempo
         }
         proyecto.agregar_tarea_prioritaria(tarea)
         print("Tarea agregada exitosamente.")
@@ -65,11 +60,12 @@ def gestionar_tareas_proximas(proyecto):
         nombre = input("Nombre de la tarea: ")
         fecha_str = input("Fecha de vencimiento (AAAA-MM-DD): ")
         tiempo = int(input("Duración estimada en minutos: "))
-        fecha_vencimiento = datetime.datetime.strptime(fecha_str, '%Y-%m-%d')
+        while not (verifica_formato_fecha(fecha_str)):
+            fecha_str = input("Fecha de vencimiento (AAAA-MM-DD): ")
         tarea = {
             'nombre': nombre,
-            'fecha_vencimiento': fecha_vencimiento,
-            'tiempo': datetime.timedelta(minutes=tiempo)
+            'fecha_vencimiento': fecha_str,
+            'tiempo': tiempo
         }
         proyecto.agregar_tarea_proxima(tarea)
         print("Tarea agregada exitosamente.")
@@ -82,7 +78,7 @@ def gestionar_tareas_proximas(proyecto):
     elif resp == "3":
         tarea = proyecto.consultar_tarea_proxima()
         if tarea:
-            print(f"Tarea más próxima a vencer: {tarea['nombre']} - Vence: {tarea['fecha_vencimiento'].strftime('%Y-%m-%d')}")
+            print(f"Tarea más próxima a vencer: {tarea['nombre']} - Vence: {tarea['fecha_vencimiento']}")
         else:
             print("La cola está vacía.")
     elif resp == "4":
