@@ -26,7 +26,7 @@ class Proyecto:
     
     def agregar_tarea(self, tarea):
         self.tareas.append(tarea)
-    
+
     def insertar_tarea(self, indice, tarea):
         self.tareas.insert(indice, tarea)
 
