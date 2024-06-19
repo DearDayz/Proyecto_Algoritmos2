@@ -1,0 +1,250 @@
+[
+    {
+        "id": 1,
+        "nombre": "Subtarea 1",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 1",
+        "estado": "Completada",
+        "id_proyecto": 1,
+        "id_tarea": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Subtarea 2",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 2",
+        "estado": "Pendiente",
+        "id_proyecto": 1,
+        "id_tarea": 1
+    },
+    {
+        "id": 1,
+        "nombre": "Subtarea 1",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 1",
+        "estado": "Pendiente",
+        "id_proyecto": 1,
+        "id_tarea": 2
+    },
+    {
+        "id": 2,
+        "nombre": "Subtarea 2",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 2",
+        "estado": "Pendiente",
+        "id_proyecto": 1,
+        "id_tarea": 2
+    },
+    {
+        "id": 3,
+        "nombre": "Subtarea 3",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 3",
+        "estado": "Completada",
+        "id_proyecto": 1,
+        "id_tarea": 2
+    },
+    {
+        "id": 1,
+        "nombre": "Subtarea 1",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 1",
+        "estado": "Pendiente",
+        "id_proyecto": 1,
+        "id_tarea": 3
+    },
+    {
+        "id": 1,
+        "nombre": "Subtarea 1",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 1",
+        "estado": "Pendiente",
+        "id_proyecto": 1,
+        "id_tarea": 4
+    },
+    {
+        "id": 2,
+        "nombre": "Subtarea 2",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 2",
+        "estado": "Pendiente",
+        "id_proyecto": 1,
+        "id_tarea": 4
+    },
+    {
+        "id": 3,
+        "nombre": "Subtarea 3",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 3",
+        "estado": "Pendiente",
+        "id_proyecto": 1,
+        "id_tarea": 4
+    },
+    {
+        "id": 1,
+        "nombre": "Subtarea 1",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 1",
+        "estado": "Pendiente",
+        "id_proyecto": 1,
+        "id_tarea": 5
+    },
+    {
+        "id": 2,
+        "nombre": "Subtarea 2",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 2",
+        "estado": "Pendiente",
+        "id_proyecto": 1,
+        "id_tarea": 5
+    },
+    {
+        "id": 3,
+        "nombre": "Subtarea 3",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 3",
+        "estado": "Pendiente",
+        "id_proyecto": 1,
+        "id_tarea": 5
+    },
+    {
+        "id": 4,
+        "nombre": "Subtarea 4",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 4",
+        "estado": "Pendiente",
+        "id_proyecto": 1,
+        "id_tarea": 5
+    },
+    {
+        "id": 1,
+        "nombre": "Subtarea 1",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 1",
+        "estado": "Pendiente",
+        "id_proyecto": 2,
+        "id_tarea": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Subtarea 2",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 2",
+        "estado": "Pendiente",
+        "id_proyecto": 2,
+        "id_tarea": 1
+    },
+    {
+        "id": 1,
+        "nombre": "Subtarea 1",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 1",
+        "estado": "Pendiente",
+        "id_proyecto": 3,
+        "id_tarea": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Subtarea 2",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 2",
+        "estado": "Pendiente",
+        "id_proyecto": 3,
+        "id_tarea": 1
+    },
+    {
+        "id": 1,
+        "nombre": "Subtarea 1",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 1",
+        "estado": "Pendiente",
+        "id_proyecto": 4,
+        "id_tarea": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Subtarea 2",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 2",
+        "estado": "Pendiente",
+        "id_proyecto": 4,
+        "id_tarea": 1
+    },
+    {
+        "id": 1,
+        "nombre": "Subtarea 1",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 1",
+        "estado": "Pendiente",
+        "id_proyecto": 5,
+        "id_tarea": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Subtarea 2",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 2",
+        "estado": "Pendiente",
+        "id_proyecto": 5,
+        "id_tarea": 1
+    },
+    {
+        "id": 1,
+        "nombre": "Subtarea 1",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 1",
+        "estado": "Pendiente",
+        "id_proyecto": 6,
+        "id_tarea": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Subtarea 2",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 2",
+        "estado": "Pendiente",
+        "id_proyecto": 6,
+        "id_tarea": 1
+    },
+    {
+        "id": 1,
+        "nombre": "Subtarea 1",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 1",
+        "estado": "Pendiente",
+        "id_proyecto": 7,
+        "id_tarea": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Subtarea 2",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 2",
+        "estado": "Pendiente",
+        "id_proyecto": 7,
+        "id_tarea": 1
+    },
+    {
+        "id": 1,
+        "nombre": "Subtarea 1",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 1",
+        "estado": "Pendiente",
+        "id_proyecto": 8,
+        "id_tarea": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Subtarea 2",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 2",
+        "estado": "Pendiente",
+        "id_proyecto": 8,
+        "id_tarea": 1
+    },
+    {
+        "id": 1,
+        "nombre": "Subtarea 1",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 1",
+        "estado": "Pendiente",
+        "id_proyecto": 9,
+        "id_tarea": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Subtarea 2",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 2",
+        "estado": "Pendiente",
+        "id_proyecto": 9,
+        "id_tarea": 1
+    },
+    {
+        "id": 1,
+        "nombre": "Subtarea 1",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 1",
+        "estado": "Pendiente",
+        "id_proyecto": 10,
+        "id_tarea": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Subtarea 2",
+        "descripcion": "Descripci\u00c3\u00b3n de la subtarea 2",
+        "estado": "Pendiente",
+        "id_proyecto": 10,
+        "id_tarea": 1
+    }
+]

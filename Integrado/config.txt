@@ -1,0 +1,2 @@
+C:\Universidad\Semestre 5\Algortimos 2\4ta evauluacion\Integrado\datos.json
+C:\Universidad\Semestre 5\Algortimos 2\4ta evauluacion\Integrado\subtareas_modificadas.json
