@@ -26,7 +26,7 @@ def gestionar_tareas_prioritarias(proyecto):
         tarea = {
             'nombre': nombre,
             'prioridad': prioridad,
-            'tiempo': datetime.timedelta(minutes=tiempo)
+            'tiempo': f"{tiempo} min"
         }
         proyecto.agregar_tarea_prioritaria(tarea)
         print("Tarea agregada exitosamente.")
@@ -216,8 +216,8 @@ def opcion_2(lista):
             x += 1
         
         if index != -1:
-            pos = input("Posición donde desea insertar la tarea (0 para insertar al inicio): ")
-            while not (es_entero(pos) and int(pos) >= 0 and int(pos) <= len(lista.tareas)):
+            pos = input("Posición donde desea insertar la tarea (1 para insertar al inicio): ")
+            while not (es_entero(pos) and int(pos) >= 1 and int(pos) <= len(lista[index].tareas)):
                 pos = input("Coloca una posición válida: ")
             
             idt = input("Id de la nueva tarea: ")
@@ -317,13 +317,17 @@ def opcion_2(lista):
                 idt = input("Coloca un ID válido (solo enteros mayores a cero): ")
             
             tarea_encontrada = None
+            x = 0
+            ind = -1
             for tarea in lista[index].tareas:
                 if tarea.id == int(idt):
                     tarea_encontrada = tarea
+                    ind = x
                     break
+                x += 1
             
             if tarea_encontrada:
-                lista[index].eliminar_tarea(int(idt))
+                lista[index].eliminar_tarea(tarea_encontrada)
                 print("\nTarea eliminada correctamente.")
 
                 # Verificar si la tarea se eliminó correctamente
@@ -356,19 +360,49 @@ def opcion_2(lista):
                 if criterio == 'nombre' and valor.lower() in tarea.nombre.lower():
                     encontrado = True
                     print(f"Tarea encontrada en el proyecto '{proyecto.nombre}':")
-                    tarea.mostrar_informacion()
+                    print(f"""
+                            {tarea.id}
+                            {tarea.nombre}
+                            {tarea.empresa_cliente}
+                            {tarea.descripcion}
+                            {tarea.fecha_inicio}
+                            {tarea.fecha_vencimiento}
+                            {tarea.estado}
+                            {tarea.porcentaje}
+
+                    """)
                     print("---------------------")
                 
                 elif criterio == 'empresa cliente' and valor.lower() in tarea.empresa_cliente.lower():
                     encontrado = True
                     print(f"Tarea encontrada en el proyecto '{proyecto.nombre}':")
-                    tarea.mostrar_informacion()
+                    print(f"""
+                            {tarea.id}
+                            {tarea.nombre}
+                            {tarea.empresa_cliente}
+                            {tarea.descripcion}
+                            {tarea.fecha_inicio}
+                            {tarea.fecha_vencimiento}
+                            {tarea.estado}
+                            {tarea.porcentaje}
+
+                    """)
                     print("---------------------")
                 
                 elif criterio == 'estado' and valor.lower() in tarea.estado.lower():
                     encontrado = True
                     print(f"Tarea encontrada en el proyecto '{proyecto.nombre}':")
-                    tarea.mostrar_informacion()
+                    print(f"""
+                            {tarea.id}
+                            {tarea.nombre}
+                            {tarea.empresa_cliente}
+                            {tarea.descripcion}
+                            {tarea.fecha_inicio}
+                            {tarea.fecha_vencimiento}
+                            {tarea.estado}
+                            {tarea.porcentaje}
+
+                    """)
                     print("---------------------")
         
         if not encontrado:
@@ -439,11 +473,11 @@ def opcion_2(lista):
                         estadot = input("Coloca un estado válido (solo caracteres alfanuméricos y espacios): ").strip()
                     tarea_encontrada.estado = estadot
                 
-                porcentaje = input(f"Porcentaje actual: {tarea_encontrada.porcentaje_completado}. Nuevo porcentaje (deje en blanco para mantener): ").strip()
+                porcentaje = input(f"Porcentaje actual: {tarea_encontrada.porcentaje}. Nuevo porcentaje (deje en blanco para mantener): ").strip()
                 if len(porcentaje) > 0:
                     while not (es_entero(porcentaje) and 0 <= int(porcentaje) <= 100):
                         porcentaje = input("Coloca un porcentaje válido (solo enteros entre 0 y 100): ").strip()
-                    tarea_encontrada.porcentaje_completado = int(porcentaje)
+                    tarea_encontrada.porcentaje = int(porcentaje)
                 
                 # Actualizar subtareas
                 if len(tarea_encontrada.subtareas) > 0:
@@ -483,7 +517,19 @@ def opcion_2(lista):
                         print("\nSubtareas actualizadas correctamente.")
                 
                 print("\nInformación de tarea actualizada:")
-                tarea_encontrada.mostrar_informacion()
+                
+
+                print(f"""
+                            {tarea_encontrada.id}
+                            {tarea_encontrada.nombre}
+                            {tarea_encontrada.empresa_cliente}
+                            {tarea_encontrada.descripcion}
+                            {tarea_encontrada.fecha_inicio}
+                            {tarea_encontrada.fecha_vencimiento}
+                            {tarea_encontrada.estado}
+                            {tarea_encontrada.porcentaje}
+
+                """)
                 
             else:
                 print(f"No se encontró ninguna tarea con el ID '{idt}'.")

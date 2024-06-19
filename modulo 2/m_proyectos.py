@@ -35,28 +35,28 @@ class Proyecto:
         self.tareas.remove(tarea)
 
     def agregar_tarea_prioritaria(self, tarea):
-        self.tareas_prioritarias.agregar(tarea)
+        self.pila_prioritarias.agregar(tarea)
     
     def agregar_tarea_proxima(self, tarea):
-        self.tareas_proximas.agregar(tarea)
+        self.cola_proximas.agregar(tarea)
     
     def eliminar_tarea_prioritaria(self):
-        return self.tareas_prioritarias.eliminar()
+        return self.pila_prioritarias.eliminar()
     
     def eliminar_tarea_proxima(self):
-        return self.tareas_proximas.eliminar()
+        return self.cola_proximas.eliminar()
     
     def consultar_tarea_prioritaria(self):
-        return self.tareas_prioritarias.ver_tope()
+        return self.pila_prioritarias.ver_tope()
     
     def consultar_tarea_proxima(self):
-        return self.tareas_proximas.ver_frente()
+        return self.cola_proximas.ver_frente()
     
     def mostrar_tiempo_total_tareas_prioritarias(self):
-        self.tareas_prioritarias.mostrar_tiempo_total()
+        self.pila_prioritarias.mostrar_tiempo_total()
     
     def mostrar_tiempo_total_tareas_proximas(self):
-        self.tareas_proximas.mostrar_tiempo_total()
+        self.cola_proximas.mostrar_tiempo_total()
     
 
 def es_entero(cadena):
@@ -419,4 +419,4 @@ def opcion_1(lista):
         
         
 
-    
+print(verifica_nombre("Empresa A"))

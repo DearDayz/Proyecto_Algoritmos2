@@ -131,6 +131,13 @@ class Pila:
         if nodo is not None:
             print(nodo.valor.nombre)
             self._recorrer_aux(nodo.siguiente)
+
+    def mostrar_tiempo_total(self,nodo):
+        suma =0
+        if nodo is not None:
+            suma += nodo.valor.tiempo
+            self.mostrar_tiempo_total(nodo.siguiente)
+
 class Cola:
     def __init__(self):
         self.frente = None

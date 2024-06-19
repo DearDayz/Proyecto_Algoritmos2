@@ -12,6 +12,8 @@ class Tarea:
     
     def agregar_subtarea(self, subtarea):
         self.subtareas.append(subtarea)
+    
+
 
 
 class Subtarea:
@@ -20,3 +22,11 @@ class Subtarea:
         self.nombre = nombre
         self.descripcion = descripcion
         self.estado = estado
+
+    def mostrar_informacion(self):
+        print(f"""
+                {self.id} 
+                {self.nombre} 
+                {self.descripcion} 
+                {self.estado} 
+        """)

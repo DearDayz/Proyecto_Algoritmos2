@@ -1,7 +1,8 @@
 import json
 from datetime import datetime
 from tareas_prio import Tarea, Subtarea
-from m_proyectos import Proyecto  ,opcion_1, opcion_2
+from m_proyectos import Proyecto  ,opcion_1
+from m_tareas import opcion_2
 
 #Agrego las rutas a un archivo .txt
 ruta_datos = r'C:\Users\dearp\Desktop\proyecto pilas\Proyecto_Algoritmos2\modulo 2\datos.json'
